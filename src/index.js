@@ -1,8 +1,11 @@
 
-
-/
 exports.min = function min (array) {
-  return 0;
+  let minimum=Infinity;
+  for(let i=0; i< array.length; i++){
+    if (array[i]<minimum)
+     minimum=array[i];
+  }
+  return minimum;
 }
 
 exports.max = function max (array) {
