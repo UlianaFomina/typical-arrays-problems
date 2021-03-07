@@ -1,5 +1,7 @@
 
 exports.min = function min (array) {
+  if (array.length == 0)
+	return 0;
   let minimum=Infinity;
   for(let i=0; i< array.length; i++){
     if (array[i]<minimum)
@@ -9,6 +11,8 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
+  if (array.length == 0)
+	return 0;
   let maximum=0;
   for(let i=0; i< array.length; i++){
     if (array[i]>maximum)
@@ -18,6 +22,8 @@ exports.max = function max (array) {
 }
 
 exports.avg = function avg (array) {
+  if (array.length == 0)
+	return 0;
   let sum=0;
   for(let i=0; i<array.length; i++){
   sum+=array[i];
